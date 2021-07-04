@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+	border: none;
+	font-family: 'Avenir', sans-serif;
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+body,html{height: 100%;}
+.hhh{
+	height: 100%;
+	overflow:hidden;
+	
+}
+.float-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr ;
+	grid-gap:60%;
+}
+h1 {
+	color: #f6f6f8 !important;
+	font-family: 'Amatic SC';
+	font-size: 6em;
+	margin-bottom: 0px;
+	text-align: center;
+	margin-top: 0;
+	font-weight: 500;
+	-webkit-text-stroke: 1px rgb(0, 0, 0);
+	
+}
+.player1{
+	margin-left: 80px;
+	display: flex;
+	width: 100px;
+	height: 500px;
+	flex-wrap: wrap;
+	background: transparent;
+	margin-right: 100px;
+	position: relative;
+}
+.rock img{width: 130px;}
+img{
+	width: 160px;
+}
+
+.player2{ 
+	display: flex;
+	width: 100px;
+	height: 500px;
+	flex-wrap: wrap;
+	background: transparent;
+	margin-right: 100px;
+	/*transform: translate(1000px,0px);*/
+}
+p{
+	color: #cc3d09 !important;
+	font-family: 'Amatic SC';
+	font-size: 50px;
+	margin-bottom: 0;
+	text-align:right;
+	position: relative;
+	font-weight: bolder;
+	left:50px;
+}
+.player2 img:active{
+	transform: translate(-200px,0px) rotate(-180deg);
+}
+h2{
+	margin-bottom: -50px;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+	font-size: 60px;
+	margin-bottom:-150px;
+	text-align: center;
+	font-weight: -300;
+	color: #f6f6f8;
+	-webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+.score-board{
+	margin: 200px auto;
+	margin-bottom: -10%;
+	text-align: center;
+	font-size: 50px;
+	border: 3px solid white;
+	border-radius: 10px;
+	width: 200px;
+	position: relative;
+}
+#ai-label{ 
+	position:absolute;
+	top:15%;
+	left: -100px;
+	font-weight:200;
+	font-size:30px;
+	color:#f6f6f8;
+	background: #cc3d09;
+	border-radius: 60px;
+}
+#user-label{ 
+	position:absolute;
+	top:15%;
+	right: -25px;
+	font-weight:200;
+	font-size:30px;
+	color:#f6f6f8;
+	background: #cc3d09;
+	border-radius: 60px;
+}
+.player1 img:active{
+	transform: translate(100px,0px);
+}
+.choices{
+	margin: 200px auto;
+	margin-bottom: -20%;
+	text-align: center;
+	font-size: 30px;
+	border: 3px solid white;
+	border-radius: 10px;
+	width: 300px;
+	position: relative;
+}
