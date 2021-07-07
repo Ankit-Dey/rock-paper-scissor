@@ -42,8 +42,16 @@ function ltt(letter){
 function compop(com,usr){
 	ac.innerHTML=ltt(com);
 	uc.innerHTML=ltt(usr);
+	if(com=="r")
+		{arock.style.transform = "translate(200px,0px)";
+		setTimeout(function (){arock.style.transform = "translate(0px,0px)";},100);}
+	else if(com=="p")
+		{apaper.style.transform = "translate(200px,0px)";
+		setTimeout(function (){apaper.style.transform = "translate(0px,0px)";},100);}
+	else if(com=="s")
+		{ascissor.style.transform = "translate(300px,0px)";
+		setTimeout(function (){ascissor.style.transform = "translate(0px,0px)";},100);}
 	}
-
 function game(userchoice){
 	const compchoice=getcomputerchoice();
 	compop(compchoice,userchoice);
@@ -75,36 +83,3 @@ scissor.addEventListener('click',function(){
 }
 
 main();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//<div class="player1"><div class="tenor-gif-embed" data-postid="9517363" data-share-method="host" data-width="100%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/rock-paper-scissors-gif-9517363">Ca Chi Pum GIF</a> from <a href="https://tenor.com/search/rockpaperscissors-gifs">Rockpaperscissors GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
